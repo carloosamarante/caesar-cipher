@@ -23,7 +23,6 @@ def operation_type(op, string, key):
 print("Select one option bellow: (1 for Encrypt and 2 for Decrypt)")
 print("1. Encrypt          2. Decrypt")
 code_type = int(input())
-print(code_type)
 print("Input your string:")
 string = input()
 print("Input the key:")
