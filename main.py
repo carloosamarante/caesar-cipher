@@ -1,24 +1,13 @@
-def encrypt(normal_string, key):
-    encrypted_string_output = []
-    for char in normal_string:
-        encrypted_char = chr(ord(char) + key)
-        encrypted_string_output.append(encrypted_char)
-    print(''.join(encrypted_string_output))
-
-def decrypt(encrypted_string, key):
-    decrypted_string_output = []
-    for char in encrypted_string:
-        decrypted_char = chr(ord(char) - key)
-        decrypted_string_output.append(decrypted_char)
-    print(''.join(decrypted_string_output))
+import modules.encrypt as encrypt
+import modules.decrypt as decrypt
 
 def operation_type(op, string, key):
     switcher = {
-        1: encrypt,
-        2: decrypt
+        1: encrypt.encrypt,
+        2: decrypt.decrypt
     }
-    main_function = switcher.get(op, "Invalid operation")
-    return main_function(string, key)
+    chosen_function = switcher.get(op, "Invalid operation")
+    return chosen_function(string, key)
 
 print("Select one option bellow: (1 for Encrypt and 2 for Decrypt)")
 print("1. Encrypt          2. Decrypt")
