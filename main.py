@@ -1,13 +1,13 @@
-import modules.encrypt as encrypt
-import modules.decrypt as decrypt
+import modules.encrypt as encoder_model
+import modules.decrypt as decoder_model
 
 def operation_type(op, string, key):
     switcher = {
-        1: encrypt.encrypt,
-        2: decrypt.decrypt
+        1: encoder_model.encrypt,
+        2: decoder_model.decrypt
     }
     chosen_function = switcher.get(op, "Invalid operation")
-    return chosen_function(string, key)
+    print(chosen_function(string, key))
 
 print("Select one option bellow: (1 for Encrypt and 2 for Decrypt)")
 print("1. Encrypt          2. Decrypt")

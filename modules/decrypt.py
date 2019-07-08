@@ -3,4 +3,4 @@ def decrypt(encrypted_string, key):
     for char in encrypted_string:
         decrypted_char = chr(ord(char) - key)
         decrypted_string_output.append(decrypted_char)
-    print(''.join(decrypted_string_output))
+    return ''.join(decrypted_string_output)

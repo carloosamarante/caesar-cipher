@@ -3,4 +3,4 @@ def encrypt(normal_string, key):
     for char in normal_string:
         encrypted_char = chr(ord(char) + key)
         encrypted_string_output.append(encrypted_char)
-    print(''.join(encrypted_string_output))
+    return ''.join(encrypted_string_output)
