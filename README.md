@@ -1,7 +1,9 @@
 # Caesar Cipher
- Encryption and Decryption of Caesar cipher 
-
+ Encryption and Decryption of Caesar cipher  
+ 
 <img src="https://media.giphy.com/media/455jgiG1HYdQ4/giphy.gif" width="500" height="500"/>
+
+"The Caesar cipher is named for Julius Caesar, who used an alphabet with a left shift of three."
 
 - __[Dependencies](#dep)__
 - __[Usage](#usage)__
