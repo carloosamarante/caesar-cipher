@@ -20,7 +20,7 @@ To run application execute:
 python3 main.py
 ```
 
-After that you can choose Encrypt or Decrypt, then write the string and finally enter the key.
+After that you can choose Encrypt or Decrypt by choosing 1 or 2, then write the string and finally enter the key.
 
 ## <a name="dep"></a>Tests
 
